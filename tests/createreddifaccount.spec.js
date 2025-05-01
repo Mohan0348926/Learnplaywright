@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+        import { test, expect } from '@playwright/test';
 test(" verify Create a reddif email account",async ({page})=>{
     await page.goto("https://register.rediff.com/register/register.php?FormName=user_details")
     await page.locator("input[placeholder='Enter your full name']").fill("N Mohankumar")

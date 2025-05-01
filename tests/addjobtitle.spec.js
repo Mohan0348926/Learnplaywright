@@ -1,6 +1,6 @@
   import { test, expect } from '@playwright/test';
   test("verify Add job title with mandatory fields",async({page})=>{
-    await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+    await page.goto( "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
     //login to the application
     await page.locator("input[name='username']").fill("Admin")
     await page.locator("input[type='password']").fill("admin123")
