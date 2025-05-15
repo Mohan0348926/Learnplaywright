@@ -3,7 +3,7 @@ const{test,expect} =require('@playwright/test');
 
 const creds={
     username:"Admin",
-    password:"admin123"
+    password:"admin123",
 }
 
 

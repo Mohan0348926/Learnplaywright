@@ -1,4 +1,4 @@
-import {test,expect}('@playwright/test');
+import {test,expect} from('@playwright/test');
 
 const creds={
     username:"Admin",
