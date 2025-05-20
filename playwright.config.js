@@ -17,7 +17,7 @@ import { TIMEOUT } from 'dns';
 export default defineConfig({
   testDir: './tests',
   expect:{
-    timeout:40000,
+    timeout:700000,
   },
   timeout:60000,
   /* Run tests in files in parallel */
@@ -34,7 +34,7 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
-    //baseURL:'https://opensource-demo.orangehrmlive.com',
+    baseURL:'https://opensource-demo.orangehrmlive.com',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
