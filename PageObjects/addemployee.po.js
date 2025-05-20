@@ -6,7 +6,7 @@ exports.addemployee = class addemployee {
         this.firstnameinput = page.locator('//input[@name="firstName"]')
         this.lastnameinput = page.locator('//input[@name="lastName"]')
         this.savebutton = page.locator('//button[@type="submit"]')
-        //this.sucessmesg = page.locator('//a[@href="/web/index.php/pim/viewPersonalDetails/empNumber/336"]')
+        this.sucessmesg = page.locator("//h6[text()='Personal Details']")
     }
     async addemployee(firstname,lastname) {
         await this.addemployeesubmenu.click()
@@ -14,7 +14,7 @@ exports.addemployee = class addemployee {
         await this.lastnameinput.fill(lastname)
         await this.savebutton.click()
     }
-    // async verifyemployeecreated(){
-    //     await expect(this.sucessmesg).toBeVisible()
-    // }
+    async verifyemployeecreated(){
+        await expect(this.sucessmesg).toBeVisible()
+    }
 }

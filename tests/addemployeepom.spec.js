@@ -14,6 +14,6 @@ test("Verify Add Employee", async ({ page }) => {
     await login.VerifyLoginsucess()
     await dashboard.clickonpim()
     await addemp.addemployee(addemployeedata.firstname,addemployeedata.lastname)
-    //await addemp.verifyemployeecreated()
+    await addemp.verifyemployeecreated()
 
 })
